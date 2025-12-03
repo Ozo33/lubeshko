@@ -27,16 +27,15 @@ closeModal.addEventListener("click", () => {
     modalOverlay.style.display = "none";
 });
 
-// Закриття по кліку на оверлей
 modalOverlay.addEventListener("click", (e) => {
     if (e.target === modalOverlay) {
         modalOverlay.style.display = "none";
     }
 });
 
-// Закриття по ESC
 document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
         modalOverlay.style.display = "none";
     }
+
 });
